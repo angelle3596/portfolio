@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/***********/all.css">
+
+  <title>Tori Angelle</title>
+</head>
+<body>
+  <div class="navbar">
+    <section>
+      <div class="cover">
+        <p class="stack">Tori</p>
+      </div>
+    </section>
+    <div class="nav-logo">
+      <li class="nav-links dropdown">
+        <a  class= 'dropdown-trigger btn' href="#!" data-target='dropdown1' id='navbarDropdown' data-toggle='dropdown'><i class="material-icons">menu</i></a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <%= link_to "See Profile", '#', class: "dropdown-item" %>
+          <%= link_to "My Appointments", "#", class: "dropdown-item" %>
+          <%= link_to "Log out",destroy_user_session_path, :method=> 'delete',class: "dropdown-item" %>
+        </div>
+      </li>
+    </div>
+  </div>
+
+  <!-- insert the javascript code here (at the bottom of the body)-->
+<!--   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+ -->
+  <script src="script.js"></script>
+
+</body>
+</html>
